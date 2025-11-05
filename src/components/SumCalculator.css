@@ -1,0 +1,106 @@
+/* SumCalculator Component Styles */
+
+.sum-calculator {
+  background: white;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 100%;
+}
+
+.sum-calculator h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 15px;
+}
+
+.calculator-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-group label {
+  font-weight: 600;
+  color: #555;
+  font-size: 1rem;
+}
+
+.number-input {
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.number-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.calculate-button {
+  padding: 14px 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-top: 10px;
+}
+
+.calculate-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.calculate-button:active {
+  transform: translateY(0);
+}
+
+.error-message {
+  padding: 12px;
+  background-color: #fee;
+  color: #c33;
+  border: 1px solid #fcc;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.result-display {
+  margin-top: 20px;
+  padding: 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 8px;
+  text-align: center;
+  border: 2px solid #667eea;
+}
+
+.result-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.result-value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #667eea;
+}
